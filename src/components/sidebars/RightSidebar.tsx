@@ -44,6 +44,9 @@ const RightSidebar = ({
     try {
       const parsed = configText ? JSON.parse(configText) : {};
       onSaveData(selectedNode.id, parsed);
+
+      // format JSON
+      setConfigText(JSON.stringify(parsed, null, 2));
     } catch (e) {
       console.error(e);
       alert('Invalid JSON format');
@@ -132,7 +135,7 @@ const RightSidebar = ({
                 padding: 2,
               }}
             >
-              <pre>{JSON.stringify(selectedNode?.data ?? {}, null, 2)}</pre>
+              <pre>{configText}</pre>
             </Box>
           </Stack>
         ) : (
