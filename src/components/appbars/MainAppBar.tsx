@@ -4,7 +4,7 @@ import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 const MainAppBar = () => {
   return (
     <AppBar
-      position="fixed"
+      position="sticky"
       color="default"
       elevation={0}
       sx={{ backgroundColor: 'white', borderBottom: '1px solid #e5e7eb' }}

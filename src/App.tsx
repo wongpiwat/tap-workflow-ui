@@ -133,7 +133,11 @@ const App = () => {
 
       {/* Workflow Area */}
       <Box
-        sx={{ flexGrow: 1, height: 'calc(100vh)', backgroundColor: '#f7f7f9' }}
+        sx={{
+          flexGrow: 1,
+          height: 'calc(100vh - 64px)',
+          backgroundColor: '#f7f7f9',
+        }}
       >
         <ReactFlow
           nodes={nodes}
@@ -144,7 +148,6 @@ const App = () => {
           onNodesChange={onNodesChange}
           onEdgesChange={onEdgesChange}
           onConnect={onConnect}
-          style={{ top: 42 }}
           fitView
         >
           <Background />
