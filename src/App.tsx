@@ -57,7 +57,7 @@ const App = () => {
 
   const { updateNodeData } = useReactFlow();
 
-  // console.log('[DEBUG] selectedNode', selectedNode);
+  console.log('[DEBUG] selectedNode', selectedNode);
 
   const onNodeClick: NodeMouseHandler = useCallback((_event, node) => {
     setSelectedNode(node);

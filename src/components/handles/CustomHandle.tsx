@@ -24,7 +24,7 @@ const CustomHandle = ({
     return connectionCount ? connections.length < connectionCount : true;
   }, [connections, connectionCount]);
 
-  console.log('[DEBUG] connections', type, connections, isConnectable);
+  // console.log('[DEBUG] connections', type, connections, isConnectable);
 
   return <Handle type={type} id={id} isConnectable={isConnectable} {...rest} />;
 };

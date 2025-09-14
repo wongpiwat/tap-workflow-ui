@@ -61,6 +61,7 @@ const RightSidebar = ({
           padding: 2,
           marginTop: 8,
           overflow: 'auto',
+          border: '1px solid #e5e7eb',
         },
         zIndex: 1,
       }}
