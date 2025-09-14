@@ -13,9 +13,12 @@ const MainAppBar = () => {
         <IconButton edge="start">
           <ArrowBackIcon />
         </IconButton>
-        <Typography variant="subtitle1">Back</Typography>
+        <Typography variant="subtitle1" color="text.primary">
+          Back
+        </Typography>
         <Typography
           variant="subtitle1"
+          color="text.primary"
           sx={{ flexGrow: 1, textAlign: 'center' }}
         >
           Personalized Campaign

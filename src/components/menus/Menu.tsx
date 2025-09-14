@@ -20,7 +20,7 @@ const Menu = ({ label, icon, color, onClick }: MenuProps) => (
   >
     <Stack alignItems="center">
       <Icon color={color}>{icon}</Icon>
-      <Typography variant="body2">
+      <Typography variant="body2" color="text.primary">
         {label}
       </Typography>
     </Stack>

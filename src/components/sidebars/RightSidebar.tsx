@@ -73,7 +73,9 @@ const RightSidebar = ({
             alignItems: 'center',
           }}
         >
-          <Typography variant="h6">Node Details</Typography>
+          <Typography variant="h6" color="text.primary">
+            Node Details
+          </Typography>
           <IconButton edge="start" onClick={onClose}>
             <CloseIcon />
           </IconButton>
@@ -92,7 +94,9 @@ const RightSidebar = ({
               <Typography variant="subtitle2" color="text.secondary">
                 Selected
               </Typography>
-              <Typography variant="body1">{nodeTitle}</Typography>
+              <Typography variant="body1" color="text.primary">
+                {nodeTitle}
+              </Typography>
             </Box>
 
             {/* View / Edit */}
@@ -131,7 +135,7 @@ const RightSidebar = ({
             </Box>
           </Stack>
         ) : (
-          <Typography variant="body2" color="text.secondary">
+          <Typography variant="body2" color="text.primary">
             Select a node to view details.
           </Typography>
         )}

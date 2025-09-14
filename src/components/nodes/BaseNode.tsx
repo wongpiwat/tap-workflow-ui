@@ -105,7 +105,11 @@ export const BaseNode = ({
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 1 }}>
             {icon}
             {label && (
-              <Typography variant="subtitle1" fontWeight={600}>
+              <Typography
+                variant="subtitle1"
+                color="text.primary"
+                fontWeight={600}
+              >
                 {label}
               </Typography>
             )}
